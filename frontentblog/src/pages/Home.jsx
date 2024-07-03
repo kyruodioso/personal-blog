@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
     <Carrousel/>
+    <div ></div>
     <div className="section w-full">
     <div className="md:grid grid-cols-2">
       <div className="col m-2 p-2">
@@ -26,11 +27,10 @@ const Home = () => {
         </div>
         <div className="col m-8">
         <span className="text-8xl font-bold underline decoration-solid">900+</span>
-        <h3 className="semi-bold text-4xl capitalize mt-3">happy client's</h3>
+        <h3 className="semi-bold text-4xl capitalize mt-3">happy clients</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus fugit ipsa. Blanditiis impedit repellendus nobis enim laboriosam doloremque natus, quos placeat molestiae officiis obcaecati, sunt, quo excepturi id tenetur.</p>
         </div>
       </div>
-
     </>
   )
 }
