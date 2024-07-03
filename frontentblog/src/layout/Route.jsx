@@ -6,7 +6,7 @@ const Route =()=>{
     return(
         <>
         <Navbar />
-        <main className="mt-4">
+        <main>
          <Outlet/>
          </main>
         <Footer/>

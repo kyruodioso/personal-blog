@@ -1,5 +1,5 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu,  } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon,SunIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 
 const navigation = [
@@ -40,11 +40,7 @@ export default function Navbar() {
                     alt="Your Company"
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                  
-                  </div>
-                </div>
+    
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
@@ -53,10 +49,12 @@ export default function Navbar() {
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <SunIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
 
                 {/* Profile dropdown */}
+                <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
                 <Menu as="div" className="relative ml-3">
                 {navigation.map((item) => (
                       <Link
@@ -72,6 +70,8 @@ export default function Navbar() {
                       </Link>
                     ))}
                 </Menu>
+                </div>
+                </div>
               </div>
             </div>
           </div>
@@ -81,8 +81,8 @@ export default function Navbar() {
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  as={Link}
+                  to={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium',
