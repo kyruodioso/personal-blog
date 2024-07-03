@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 const Carrousel = () => {
   return (
     <>
-               <Carousel autoPlay={true} infiniteLoop={true}>
+               <Carousel className="absolute" autoPlay={true} infiniteLoop={true}>
                 <div >
                     <img src="https://cdn.pixabay.com/photo/2016/11/19/17/25/furniture-1840463_1280.jpg" />
                     <p className="legend">Legend 1</p>
