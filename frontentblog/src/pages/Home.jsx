@@ -2,21 +2,42 @@ import Carrousel from "../components/Carrousel"
 
 
 const Home = () => {
+
+  const products=[];
+
   return (
     <>
     <Carrousel/>
-    <div ></div>
-    <div className="section w-full">
-    <div className="md:grid grid-cols-2">
-      <div className="col m-2 p-2">
-      <img src="https://cdn.pixabay.com/photo/2016/11/21/12/59/couch-1845270_1280.jpg" alt="" />
-      </div>
-      <div className="col m-2 p-2">
-        <h3 className="text-3xl font-semibold tracking-tight  sm:text-4xl uppercase inline-block align-baseline">crafting spaces</h3>
-      <h2 className="text-3xl font-semibold tracking-tight  sm:text-4xl uppercase inline-block align-baseline">Designing for your lifestile</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste eligendi a vel perferendis, eius odio? Excepturi nesciunt voluptate assumenda deleniti minus, eaque rerum modi eveniet debitis impedit reprehenderit earum!</p>
-      </div>
-      </div>
+    <div className="section text-center">
+      <h2 className="text-2xl text-white font-semibold uppercase"> recent work</h2>
+      <h2 className="text-5xl text-white font-bold uppercase mt-2"> take a look at my recent design ventures</h2>
+
+       {
+        products && Array.isArray(products) &&(
+          <div className="bg-white">
+          <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <h2 className="sr-only">Products</h2>
+    
+            <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+              {products.map((product) => (
+                <a key={product.id} href={product.href} className="group">
+                  <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img
+                      src={product.imageSrc}
+                      alt={product.imageAlt}
+                      className="h-full w-full object-cover object-center group-hover:opacity-75"
+                    />
+                  </div>
+                  <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                  <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+        )
+       }
+    
     </div>
     
     <div className="md:grid grid-cols-2 bg-sky-400 w-full text-white text-center">

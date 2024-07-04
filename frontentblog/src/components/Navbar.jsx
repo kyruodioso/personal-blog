@@ -3,10 +3,11 @@ import { Bars3Icon, XMarkIcon,SunIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Services', href: '/services', current: false },
   { name: 'Contact', href: '/contact', current: false },
+  { name: 'Blog', href: '/blog', current: false },
 ]
 
 function classNames(...classes) {
@@ -15,7 +16,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-10 mt-3 ml-5 mr-5 z-50 fixed w-96">
+    <Disclosure as="nav" className="bg-gray-800 rounded-lg border border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 mt-3 ml-5 mr-5 z-50 sticky top-0">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
