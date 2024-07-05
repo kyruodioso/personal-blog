@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <div>
     <footer
-      className="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white">
+      className="flex ml-10 mr-10 flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white text-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg mb-12">
       <div className="container pt-9">
         
         <div className="mb-6 flex justify-center space-x-2">
@@ -107,7 +107,7 @@ const Footer = () => {
         </div>
       </div>
     
-      <div className="w-full bg-black/5 p-4 text-center">
+      <div className="w-full p-4 text-center">
         © 2023 Copyright:
         <a href="https://tw-elements.com/">TW Elements</a>
       </div>
