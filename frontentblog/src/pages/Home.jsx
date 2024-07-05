@@ -170,7 +170,7 @@ const Home = () => {
         <div className="col  m-3">
           <img src="https://cdn.pixabay.com/photo/2024/03/11/12/33/crow-8626517_1280.jpg" alt="" />
         </div>
-        <div className="col m-3 bg-gray-800 border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 border p-5 border-b-indigo-500/50 border-l-indigo-500/50 rounded-lg shadow-lg">
+        <div className="col m-3 bg-white  border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 border p-5 border-b-indigo-500/50 border-l-indigo-500/50 rounded-lg shadow-lg">
           <span className="text-3-l mb-4 font-semibold">
             Story of nataliy
           </span>
@@ -189,8 +189,120 @@ const Home = () => {
       <span className="text-3-l mb-4 font-semibold">
             Pricing plan
           </span>
-      <h3 className="font-bold text-4xl mb-4 text-center">Pricing options that meets your budget and needs</h3>
+      <h3 className="font-bold text-4xl text-center">Pricing options that meets your budget and needs</h3>
+     
 
+      <div className="flex flex-col items-center justify-center min-h-screen p-10 ">
+      <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mt-8">
+		<div className="flex flex-col flex-grow bg-white mt-8 overflow-hidden rounded-lg border border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 border-b-indigo-500/50 border-l-indigo-500/50">
+			<div className="flex flex-col items-center p-10 ">
+				<span className="font-semibold">Padawan</span>
+				<div className="flex items-center">
+					<span className="text-3xl">$</span>
+					<span className="text-5xl font-bold">20</span>
+					<span className="text-2xl text-gray-500">/mo</span>
+				</div>
+			</div>
+			<div className="p-10">
+				<ul>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2">Lightsaber</span>
+					</li>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2">Robe</span>
+					</li>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2">Insurance</span>
+					</li>
+				</ul>
+			</div>
+			<div className="flex px-10 pb-10 justfy-center">
+				<button className="flex items-center justify-center w-full h-12 px-6 text-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">Join now</button>
+			</div>
+		</div>
+
+		<div className="z-10 flex flex-col flex-grow mt-8 overflow-hidden transform bg-white  shadow-lg md:scale-110 rounded-lg border border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 border-b-indigo-500/50 border-l-indigo-500/50">
+			<div className="flex flex-col items-center p-10 ">
+				<span className="font-semibold">Jedi Knight</span>
+				<div className="flex items-center">
+					<span className="text-3xl">$</span>
+					<span className="text-6xl font-bold">50</span>
+					<span className="text-2xl text-gray-500">/mo</span>
+				</div>
+			</div>
+			<div className="p-10">
+				<ul>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2 italic">Padawan +</span>
+					</li>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2">Solo missions</span>
+					</li>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2">Utility belt</span>
+					</li>
+				</ul>
+			</div>
+			<div className="flex px-10 pb-10 justfy-center">
+				<button className="flex items-center justify-center w-full h-12 px-6 text-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">Join now</button>
+			</div>
+		</div>
+
+		<div className="flex flex-col flex-grow overflow-hidden bg-white shadow-lg mt-19 rounded-lg border border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 border-b-indigo-500/50 border-l-indigo-500/50">
+			<div className="flex flex-col items-center p-10 ">
+				<span className="font-semibold">Jedi Master</span>
+				<div className="flex items-center">
+					<span className="text-3xl">$</span>
+					<span className="text-5xl font-bold">99</span>
+					<span className="text-2xl text-gray-500">/mo</span>
+				</div>
+			</div>
+			<div className="p-10">
+				<ul>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2 italic">Jedi Knight +</span>
+					</li>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2">Sit on council</span>
+					</li>
+					<li className="flex items-center">
+						<svg className="w-5 h-5 text-green-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+						</svg>
+						<span className="ml-2">Stock options</span>
+					</li>
+				</ul>
+			</div>
+			<div className="flex px-10 pb-10 justfy-center">
+				<button className="flex items-center justify-center w-full h-12 px-6 text-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">Join now</button>
+			</div>
+		</div>
+	</div>
+  </div>
       </div>
     </>
   );
