@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <>
-      <Carrousel />
+      <Carrousel  />
       <div className="section text-center">
         <h2 className="text-2xl text-white font-semibold uppercase">
           {" "}
