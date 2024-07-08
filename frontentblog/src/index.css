@@ -7,10 +7,8 @@ body {
     background: radial-gradient(circle, rgba(9,9,121,1) 12%, rgba(9,9,121,1) 34%, rgba(2,0,36,1) 80%);
 }
 
-@media screen and (min-width: 1920px) {
+
     .img-carousel {
-      /* Estilos específicos para pantallas grandes */
-      /* Por ejemplo, aquí puedes aplicar la altura del 90% */
-      height: calc(92vh);
+
+      max-height: calc(87vh);
     }
-  }

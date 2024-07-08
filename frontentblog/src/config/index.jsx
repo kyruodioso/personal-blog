@@ -7,6 +7,7 @@ import About from "../pages/About"
 import Contact from "../pages/Contact"
 import Notfound from "../pages/Notfound"
 import Services from "../pages/Services"
+import { useProjects } from "../services/useProjects"
 
 export const router= createBrowserRouter([
     {
@@ -15,7 +16,8 @@ export const router= createBrowserRouter([
         errorElement:<Notfound/>,
         children:[
             {   index:true,
-                element:<Home/>
+                element:<Home/>,
+                loader: useProjects
             },
             {
                 path:'/about',
