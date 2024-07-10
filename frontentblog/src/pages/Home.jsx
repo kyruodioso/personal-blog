@@ -3,14 +3,12 @@ import Carrousel from "../components/Carrousel";
 
 const Home = () => {
   const projects = useLoaderData();
-   
-  console.log(projects)
+
+  console.log(projects);
 
   return (
-
-
     <>
-      <Carrousel  />
+      <Carrousel />
       <div className="section text-center">
         <h2 className="text-2xl text-white font-semibold uppercase">
           {" "}
@@ -26,14 +24,18 @@ const Home = () => {
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
               <h2 className="sr-only">Proyectos</h2>
 
-              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
                 {projects?.map((project) => (
-                  <a key={project.mainImage.asset._id} href={project.link} className="group">
+                  <a
+                    key={project.mainImage.asset._id}
+                    href={project.link}
+                    className="group"
+                  >
                     <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                       <img
                         src={project.mainImage.asset.url}
                         alt={project.mainImage.alt}
-                        className="h-full w-full object-cover object-center group-hover:opacity-75"
+                        className="h-48 w-full object-cover object-center group-hover:opacity-75"
                       />
                     </div>
                     <h3 className="mt-4 text-sm text-gray-700">
@@ -50,14 +52,14 @@ const Home = () => {
         )}
       </div>
 
-      <div className="md:grid grid-cols-2 w-full text-white">
-        <div className="col mx-8">
+      <div className="md:grid grid-cols-2 mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 text-white ">
+        <div className="col mx-4 mt-2">
           <p className="mb-2">working process</p>
           <h3 className="font-bold text-4xl">
             To design with perfect strategy
           </h3>
         </div>
-        <div className="col mx-8">
+        <div className="col mx-4 mt-2 pt-8">
           <p>
             In my working process, I dive into a whirlwind of ideas, research,
             and design, crafting digital experiences that resonate.
@@ -66,9 +68,9 @@ const Home = () => {
       </div>
       <div>
         <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          <div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             <div className="group relative">
-              <div className="flex flex-col flex-grow bg-white mt-8 overflow-hidden rounded-lg border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div className="flex flex-col flex-grow bg-white overflow-hidden rounded-lg border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10">
                 <div className="flex flex-col items-center p-10">
                   <span className="font-semibold">Padawan</span>
                   <div className="flex items-center">
@@ -78,13 +80,13 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="p-10 text-center text-white">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis quibusdam eum velit sunt est nesciunt.</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                    debitis quibusdam eum velit sunt est nesciunt.
+                  </p>
                 </div>
- 
               </div>
-
             </div>
-
           </div>
         </div>
       </div>

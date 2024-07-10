@@ -4,7 +4,7 @@ export const useProjects = async () => {
   try {
     const projects = await client.fetch(`*[_type == "proyectos"]{
       title,
-      date,
+      publishedAt,
       link,
       description,
       projectType,
