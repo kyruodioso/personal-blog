@@ -8,6 +8,10 @@ import Contact from "../pages/Contact"
 import Notfound from "../pages/Notfound"
 import Services from "../pages/Services"
 import { useProjects } from "../services/useProjects"
+import { useAboutMe } from "../services/useAboutMe"
+import Blog from "../pages/Blog"
+import Posts from "../pages/Posts"
+import { useCategory } from "../services/useCategory"
 
 export const router= createBrowserRouter([
     {
@@ -21,11 +25,21 @@ export const router= createBrowserRouter([
             },
             {
                 path:'/about',
-                element:<About/>
+                element:<About/>,
+                loader: useAboutMe
             },
             {
                 path:'/contact',
                 element:<Contact/>
+            },
+            {
+                path:'/blog',
+                element:<Blog />,
+                loader: useCategory
+            },
+            {
+                path:'/blog/:id',
+                element:<Posts/>
             },
             {
                 path:'/post/:id',
