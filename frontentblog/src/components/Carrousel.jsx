@@ -5,12 +5,12 @@ const Carrousel = () => {
   return (
     <>
     <div className="relative ">
-  <button
-    className="bg-white rounded-full p-2 absolute left-0 top-1/2 transform -translate-y-1/2 z-30"
-    onClick={() => window.location.href = 'https://www.google.com/'}
-  >
-    Hola
-  </button>
+  <button className="text-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold py-2 px-4 rounded p-2 absolute left-0 top-1/2 transform -translate-y-1/2 ml-10 z-30">
+  Say Hello
+</button>
+<button className=" hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded p-2 absolute left-0 top-1/2 transform -translate-y-1/2 ml-40 z-30">
+  Work Demo
+</button>
 
       <Carousel autoPlay={true}
   infiniteLoop={true}

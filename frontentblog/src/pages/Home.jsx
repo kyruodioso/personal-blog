@@ -52,8 +52,8 @@ const Home = () => {
         )}
       </div>
 
-      <div className="md:grid grid-cols-2 mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 text-white ">
-        <div className="col mx-4 mt-2">
+      <div className="md:grid grid-cols-2 mx-auto max-w-2xl px-4 py-16 sm:px-6  lg:max-w-7xl lg:px-8 text-white ">
+        <div className="col mx-4 mt-2 pr-20">
           <p className="mb-2">working process</p>
           <h3 className="font-bold text-4xl">
             To design with perfect strategy
@@ -67,7 +67,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             <div className="group relative">
               <div className="flex flex-col flex-grow bg-white overflow-hidden rounded-lg border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10">
@@ -91,16 +91,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="md:grid grid-cols-2  w-full text-white">
-        <div className="col  m-3">
+      <div className="md:grid grid-cols-2 mx-auto max-w-2xl px-4 py-16 sm:px-6  lg:max-w-7xl lg:px-8 text-white ">
+      <div className="col mx-4 mt-2 pr-20">
           <img
             src="https://cdn.pixabay.com/photo/2024/03/11/12/33/crow-8626517_1280.jpg"
             alt=""
           />
         </div>
-        <div className="col m-3 bg-white  border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 border p-5 border-b-indigo-500/50 border-l-indigo-500/50 rounded-lg shadow-lg">
+        <div className="col mx-4 mt-2 pt-8 bg-white  border-slate-800 backdrop-filter backdrop-blur-sm bg-opacity-10 border p-5 border-b-indigo-500/50 border-l-indigo-500/50 rounded-lg shadow-lg">
           <span className="text-3-l mb-4 font-semibold">Story of nataliy</span>
-          <h3 className="font-bold text-4xl mb-4 text-center">
+          <h3 className="font-bold text-4xl mb-4">
             Designing experiences, building connections
           </h3>
           <p>
