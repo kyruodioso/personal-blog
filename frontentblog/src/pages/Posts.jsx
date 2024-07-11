@@ -5,12 +5,10 @@ const Posts = () => {
   const posts = useLoaderData();
   const  categoryId  = useParams();
 
-  console.log(categoryId.id)
 
   const filteredPosts = posts.filter((post) => {
     return post.categories._ref === categoryId.id
   });
-  console.log(filteredPosts)
 
   return (
     <>
@@ -31,9 +29,8 @@ const Posts = () => {
       <div>
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-
           {filteredPosts?.map((post) => (
-            <>
+            
                 <div className="group relative" key={post.title}>
                   <div
                     
@@ -66,7 +63,6 @@ const Posts = () => {
                       <span className="font-semibold mt-4 text-2xl" >
                         {post.title.slice(0, 12)}...
                       </span>
-                      <span>{post.categories._ref}</span>
 
                       <p className="mt-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -75,7 +71,7 @@ const Posts = () => {
                     </div>
                   </div>
                 </div>
-            </>
+          
           ))}
                         </div>
 

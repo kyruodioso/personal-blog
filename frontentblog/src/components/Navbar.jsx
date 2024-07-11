@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-white rounded-lg border border-slate-500 backdrop-filter backdrop-blur-sm bg-opacity-10 mt-3 ml-10 mr-10 z-50 sticky top-0 shadow-lg "
+      className="bg-white rounded-lg border border-slate-500 backdrop-filter backdrop-blur-sm bg-opacity-10 mt-3 ml-8 mr-8 z-50 sticky top-0 shadow-lg "
     >
       {({ open }) => (
         <>
