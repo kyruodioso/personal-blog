@@ -4,7 +4,6 @@ import Carrousel from "../components/Carrousel";
 const Home = () => {
   const projects = useLoaderData();
 
-  console.log(projects);
 
   return (
     <>

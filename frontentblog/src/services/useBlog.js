@@ -1,8 +1,8 @@
 import client from './client';
 
 export const useBlog = async () => {
-  try {
-    const posts = await client.fetch(`*[_type == "post"]{
+    try {
+        const posts = await client.fetch(`*[_type == "post"]{
             title,
             slug,
             mainImage{
@@ -16,9 +16,9 @@ export const useBlog = async () => {
     _ref
   }
         }`);
-    return posts;
-  } catch (error) {
-    console.error('Error fetching projects:', error);
-    return []; 
-  }
+        return posts;
+    } catch (error) {
+        console.error('Error fetching projects:', error);
+        return [];
+    }
 };
