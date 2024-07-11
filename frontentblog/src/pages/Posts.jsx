@@ -5,11 +5,10 @@ const Posts = () => {
   const posts = useLoaderData();
   const  categoryId  = useParams();
 
-  console.log(categoryId)
+  console.log(categoryId.id)
 
-  const filteredPosts = posts?.filter((post) => {
-  
-    return post.categories._ref=== categoryId
+  const filteredPosts = posts.filter((post) => {
+    return post.categories._ref === categoryId.id
   });
   console.log(filteredPosts)
 
@@ -67,7 +66,7 @@ const Posts = () => {
                       <span className="font-semibold mt-4 text-2xl" >
                         {post.title.slice(0, 12)}...
                       </span>
-                      <span>{post.categories._ref === categoryId}</span>
+                      <span>{post.categories._ref}</span>
 
                       <p className="mt-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
