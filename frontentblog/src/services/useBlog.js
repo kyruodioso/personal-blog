@@ -12,6 +12,7 @@ export const useBlog = async () => {
                 },
                 alt
             },
+            _updatedAt,
             categories[0]{
     _ref
   }

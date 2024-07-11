@@ -12,6 +12,7 @@ import { useAboutMe } from "../services/useAboutMe"
 import Blog from "../pages/Blog"
 import Posts from "../pages/Posts"
 import { useCategory } from "../services/useCategory"
+import { useBlog } from "../services/useBlog"
 
 export const router= createBrowserRouter([
     {
@@ -39,11 +40,13 @@ export const router= createBrowserRouter([
             },
             {
                 path:'/blog/:id',
-                element:<Posts/>
+                element:<Posts/>,
+                loader:useBlog
+
             },
             {
                 path:'/post/:id',
-                element:<SinglePost/>
+                element:<SinglePost/>,
             },
             {
                 path:'/services',
