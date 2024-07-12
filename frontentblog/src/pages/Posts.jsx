@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import dateFormat from 'dateformat';
+import { Link } from "react-router-dom";
 
 const Posts = () => {
   const posts = useLoaderData();
@@ -12,26 +13,13 @@ const Posts = () => {
 
   return (
     <>
-      <div className="md:grid grid-cols-2 mx-auto max-w-2xl px-4 py-16 sm:px-6  lg:max-w-7xl lg:px-8 text-white ">
-        <div className="col mx-4 mt-2 pr-20">
-          <p className="mb-2">working process</p>
-          <h3 className="font-bold text-4xl">
-            To design with perfect strategy
-          </h3>
-        </div>
-        <div className="col mx-4 mt-2 pt-8">
-          <p>
-            In my working process, I dive into a whirlwind of ideas, research,
-            and design, crafting digital experiences that resonate.
-          </p>
-        </div>
-      </div>
+
       <div>
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {filteredPosts?.map((post) => (
             
-                <div className="group relative" key={post.title}>
+                <Link to={`/post/${post.slug.current}`} className="group relative" key={post.title}>
                   <div
                     
                     className=" flex flex-col flex-grow bg-white overflow-hidden rounded-lg border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10"
@@ -70,7 +58,7 @@ const Posts = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Link>
           
           ))}
                         </div>

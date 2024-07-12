@@ -15,7 +15,10 @@ export const useBlog = async () => {
             _updatedAt,
             categories[0]{
     _ref
-  }
+  },
+   body,
+    "name": author->name,
+    "authorImage": author->image
         }`);
         return posts;
     } catch (error) {
