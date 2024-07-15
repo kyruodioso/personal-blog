@@ -1,21 +1,20 @@
 import { useLoaderData } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
+import RoundedCard from "../components/Rounded";
 
 const Home = () => {
   const projects = useLoaderData();
-
-
   return (
     <>
       <Carrousel />
       <div className="section text-center mt-8">
         <h2 className="text-2xl text-white font-semibold uppercase">
           {" "}
-          recent work
+          Trabajos recientes
         </h2>
         <h2 className="text-5xl text-white font-bold uppercase mt-2">
           {" "}
-          take a look at my recent design ventures
+          Una muestra de mis últimos trabajos
         </h2>
 
         {projects && Array.isArray(projects) && (
@@ -36,7 +35,7 @@ const Home = () => {
                         className="h-48 w-full object-cover object-center group-hover:opacity-75"
                       />
                     </div>
-                    <h3 className="mt-4 text-sm text-gray-700">
+                    <h3 className="mt-4 text-sm text-white">
                       {project.title}
                     </h3>
                     <p className="mt-1 text-lg font-medium text-gray-900">
@@ -52,40 +51,39 @@ const Home = () => {
 
       <div className="md:grid grid-cols-2 mx-auto max-w-2xl px-4 py-16 sm:px-6  lg:max-w-7xl lg:px-8 text-white ">
         <div className="col mx-4 mt-2 pr-20">
-          <p className="mb-2">working process</p>
+          <p className="mb-2">proceso de trabajo</p>
           <h3 className="font-bold text-4xl">
-            To design with perfect strategy
+            Siguiendo un flujo para un mejor desempeño
           </h3>
         </div>
         <div className="col mx-4 mt-2 pt-8">
           <p>
-            In my working process, I dive into a whirlwind of ideas, research,
-            and design, crafting digital experiences that resonate.
+            Iniciando en las mismas ideas con un gratificante diseño visual, una sólida estructura de software y un camino de crecimiento por el proyecto poniendo foco en lo que le dió origen al mismo.
           </p>
         </div>
       </div>
       <div>
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+
+<>
+<RoundedCard/>
+<div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             <div className="group relative">
-              <div className="flex flex-col flex-grow bg-white overflow-hidden rounded-lg border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10">
+              <div className="flex flex-col flex-grow bg-white overflow-hidden border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-full">
                 <div className="flex flex-col items-center p-10">
-                  <span className="font-semibold">Padawan</span>
-                  <div className="flex items-center">
-                    <span className="text-3xl">$</span>
-                    <span className="text-5xl font-bold">20</span>
-                    <span className="text-2xl text-gray-500">/mo</span>
-                  </div>
+                  <span className="font-semibold text-white">titulo</span>
+          
                 </div>
                 <div className="p-10 text-center text-white">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                    debitis quibusdam eum velit sunt est nesciunt.
-                  </p>
+lallall Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore consectetur asperiores laboriosam architecto vel voluptatibus, eligendi neque placeat possimus aliquam fuga, esse itaque suscipit! Magni vero odio repellat maiores optio?                  </p>
                 </div>
               </div>
             </div>
           </div>
+</>
+
+       
         </div>
       </div>
 

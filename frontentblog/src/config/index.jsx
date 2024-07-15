@@ -23,7 +23,7 @@ export const router= createBrowserRouter([
         children:[
             {   index:true,
                 element:<Home/>,
-                loader: useProjects
+                loader: useProjects,
             },
             {
                 path:'/about',
