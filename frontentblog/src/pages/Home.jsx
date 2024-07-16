@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
-import RoundedCard from "../components/Rounded";
+import RoundedCard from "../components/RoundedCard";
 
 const Home = () => {
   const projects = useLoaderData();
@@ -63,28 +63,15 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-
-<>
+      <div  className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div
+        
+         className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 <RoundedCard/>
-<div className=" grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            <div className="group relative">
-              <div className="flex flex-col flex-grow bg-white overflow-hidden border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-full">
-                <div className="flex flex-col items-center p-10">
-                  <span className="font-semibold text-white">titulo</span>
-          
-                </div>
-                <div className="p-10 text-center text-white">
-                  <p>
-lallall Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore consectetur asperiores laboriosam architecto vel voluptatibus, eligendi neque placeat possimus aliquam fuga, esse itaque suscipit! Magni vero odio repellat maiores optio?                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-</>
 
+</div>
+</div>
        
-        </div>
       </div>
 
       <div className="md:grid grid-cols-2 mx-auto max-w-2xl px-4 py-16 sm:px-6  lg:max-w-7xl lg:px-8 text-white ">
