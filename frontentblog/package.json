@@ -15,6 +15,7 @@
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.20.1",
     "dateformat": "^5.0.3",
+    "lottie-react": "^2.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-responsive-carousel": "^3.2.23",
