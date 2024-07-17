@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import RoundedCard from "../components/RoundedCard";
 
@@ -90,8 +90,8 @@ const Home = () => {
           <span className="text-3-l mb-4 font-semibold">Tecnologias</span>
           <h3 className="font-bold text-4xl mb-4">Diseñando experiencia,</h3>
           <p>Implementación de las últimas tecnologias</p>
-          <button className="rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-3 mt-8">
-            Read more
+          <button as={Link} className="rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-3 ">
+            Saber más
           </button>
         </div>
       </div>
