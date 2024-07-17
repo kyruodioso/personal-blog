@@ -1,5 +1,6 @@
 import { useLoaderData, useParams} from "react-router-dom"
 import BlockContent from '@sanity/block-content-to-react'
+import imageUrlBuilder from '@sanity/image-url'
 
 
 const links = [

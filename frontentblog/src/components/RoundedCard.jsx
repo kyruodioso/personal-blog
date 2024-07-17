@@ -19,7 +19,7 @@ const workFlow = [
       effect: cube
   },
   {
-    title: "Análisis de requisitos",
+    title: "Análisis",
     description:
       "Se determinan las necesidades del sistema. Este punto comprende los requisitos funcionales y no funcionales.",
       effect: chart
@@ -49,7 +49,7 @@ const workFlow = [
       effect: feedback
   },
   {
-    title: "Despliegue a Producción",
+    title: "Despliegue",
     description:
       "Se configura un entorno de producción. Realiza pruebas finales en el entorno de producción. Implementa la aplicación o sitio web en producción.",
       effect: party
@@ -74,9 +74,9 @@ const RoundedCard = () => {
             </div>
 
             {/* Contenedor del texto */}
-            <div className="h-96 flex flex-col flex-grow bg-white overflow-hidden border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg relative">
+            <div className="h-96 flex flex-col flex-grow bg-white overflow-hidden border border-indigo-500 backdrop-filter backdrop-blur-sm bg-opacity-5 rounded-lg relative">
               <div className="flex flex-col items-center p-10">
-                <span className="font-semibold text-white">{item.title}</span>
+                <span className="font-semibold text-4xl text-center text-white">{item.title}</span>
               </div>
               <div className="p-5 text-center font-semibold text-white">
                 <p>{item.description}</p>

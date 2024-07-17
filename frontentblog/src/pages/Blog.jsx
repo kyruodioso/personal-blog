@@ -9,11 +9,11 @@ const Blog = () => {
       <div className="section text-center mt-8">
         <h2 className="text-2xl text-white font-semibold uppercase">
           {" "}
-          recent work
+          Blog
         </h2>
         <h2 className="text-5xl text-white font-bold uppercase mt-2">
           {" "}
-          take a look at my recent design ventures
+          Tecnologias que uso actualmente
         </h2>
 
         <div>
